@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  ng:
+    build: .
+    ports:
+      - 80:80
+    networks:
+      - ng-app
+networks:
+  ng-app:
+    driver: bridge
